@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StacklyPay - Smart Digital Payments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header class="header" data-testid="header">
+        <div class="header-content">
+            <div class="logo" data-testid="logo">
+                <i class="fas fa-wallet"></i>
+                Stackly Pay
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" data-testid="nav-home">Home</a></li>
+                <li><a href="#features" data-testid="nav-features">Features</a></li>
+                <li><a href="#services" data-testid="nav-services">Services</a></li>
+                <li><a href="#benefits" data-testid="nav-benefits">Benefits</a></li>
+                <li><a href="#testimonials" data-testid="nav-testimonials">Reviews</a></li>
+            </ul>
+            <button class="header-btn" data-testid="get-started-btn" onclick="window.location.href='404.html'">Get Started</button>
+            <button class="mobile-menu-btn" data-testid="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" data-testid="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 data-testid="hero-title">Fast, Secure & Simple Digital Payments</h1>
+                <p data-testid="hero-description">Experience the future of digital payments with StacklyPay. Send money, pay bills, and shop online with just a few taps. Your money, your way!</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" data-testid="download-app-btn" onclick="window.location.href='404.html'">
+                        <i class="fas fa-download"></i> Download App
+                    </button>
+                    <button class="btn-secondary" data-testid="learn-more-btn" onclick="window.location.href='404.html'">
+                        <i class="fas fa-play-circle"></i> Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-phone">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="balance-card" data-testid="phone-balance-card">
+                                <div class="balance-label">Available Balance</div>
+                                <div class="balance-value">₹ 52,450</div>
+                            </div>
+                            <div class="quick-actions-grid">
+                                <div class="quick-action-item" data-testid="phone-send">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <div class="quick-action-text">Send</div>
+                                </div>
+                                <div class="quick-action-item" data-testid="phone-receive">
+                                    <i class="fas fa-qrcode"></i>
+                                    <div class="quick-action-text">Receive</div>
+                                </div>
+                                <div class="quick-action-item" data-testid="phone-scan">
+                                    <i class="fas fa-camera"></i>
+                                    <div class="quick-action-text">Scan</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features" data-testid="features-section">
+        <div class="section-header">
+            <div class="section-subtitle" data-testid="features-subtitle">WHY CHOOSE US</div>
+            <h2 class="section-title" data-testid="features-title">Powerful Features for Modern Payments</h2>
+            <p class="section-description" data-testid="features-description">Everything you need to manage your money efficiently and securely</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card" data-testid="feature-card-1">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="feature-title">Instant Transfers</h3>
+                <p class="feature-text">Send and receive money instantly to anyone, anywhere in the country with zero waiting time.</p>
+            </div>
+            <div class="feature-card" data-testid="feature-card-2">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="feature-title">Bank-Level Security</h3>
+                <p class="feature-text">Your transactions are protected with advanced encryption and multi-factor authentication.</p>
+            </div>
+            <div class="feature-card" data-testid="feature-card-3">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3 class="feature-title">Easy to Use</h3>
+                <p class="feature-text">Simple and intuitive interface designed for everyone. No tech expertise needed!</p>
+            </div>
+            <div class="feature-card" data-testid="feature-card-4">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="feature-title">Smart Analytics</h3>
+                <p class="feature-text">Track your spending patterns with detailed insights and reports to manage your finances better.</p>
+            </div>
+            <div class="feature-card" data-testid="feature-card-5">
+                <div class="feature-icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <h3 class="feature-title">Rewards & Cashback</h3>
+                <p class="feature-text">Earn exciting rewards and cashback on every transaction you make with StacklyPay.</p>
+            </div>
+            <div class="feature-card" data-testid="feature-card-6">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3 class="feature-title">24/7 Support</h3>
+                <p class="feature-text">Our dedicated support team is always available to help you with any queries or issues.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services" data-testid="services-section">
+        <div class="section-header">
+            <div class="section-subtitle" data-testid="services-subtitle">ALL-IN-ONE SOLUTION</div>
+            <h2 class="section-title" data-testid="services-title">Complete Payment Services</h2>
+            <p class="section-description" data-testid="services-description">From bill payments to shopping, we've got everything covered</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-item" data-testid="service-mobile">
+                <i class="fas fa-mobile-alt service-icon"></i>
+                <div class="service-name">Mobile Recharge</div>
+            </div>
+            <div class="service-item" data-testid="service-dth">
+                <i class="fas fa-tv service-icon"></i>
+                <div class="service-name">DTH Recharge</div>
+            </div>
+            <div class="service-item" data-testid="service-electricity">
+                <i class="fas fa-bolt service-icon"></i>
+                <div class="service-name">Electricity Bill</div>
+            </div>
+            <div class="service-item" data-testid="service-water">
+                <i class="fas fa-tint service-icon"></i>
+                <div class="service-name">Water Bill</div>
+            </div>
+            <div class="service-item" data-testid="service-gas">
+                <i class="fas fa-fire service-icon"></i>
+                <div class="service-name">Gas Payment</div>
+            </div>
+            <div class="service-item" data-testid="service-credit">
+                <i class="fas fa-credit-card service-icon"></i>
+                <div class="service-name">Credit Card</div>
+            </div>
+            <div class="service-item" data-testid="service-insurance">
+                <i class="fas fa-shield-alt service-icon"></i>
+                <div class="service-name">Insurance</div>
+            </div>
+            <div class="service-item" data-testid="service-loan">
+                <i class="fas fa-hand-holding-usd service-icon"></i>
+                <div class="service-name">Loan EMI</div>
+            </div>
+            <div class="service-item" data-testid="service-fastag">
+                <i class="fas fa-road service-icon"></i>
+                <div class="service-name">FASTag</div>
+            </div>
+            <div class="service-item" data-testid="service-broadband">
+                <i class="fas fa-wifi service-icon"></i>
+                <div class="service-name">Broadband</div>
+            </div>
+            <div class="service-item" data-testid="service-investment">
+                <i class="fas fa-chart-pie service-icon"></i>
+                <div class="service-name">Investment</div>
+            </div>
+            <div class="service-item" data-testid="service-shopping">
+                <i class="fas fa-shopping-bag service-icon"></i>
+                <div class="service-name">Shopping</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" data-testid="stats-section">
+        <div class="section-header" style="color: white;">
+            <div class="section-subtitle" style="color: rgba(255,255,255,0.9);" data-testid="stats-subtitle">OUR ACHIEVEMENTS</div>
+            <h2 class="section-title" style="background: white; background-clip: text; -webkit-text-fill-color: transparent;" data-testid="stats-title">Trusted by Millions</h2>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-item" data-testid="stat-users">
+                <div class="stat-number">50M+</div>
+                <div class="stat-label">Active Users</div>
+            </div>
+            <div class="stat-item" data-testid="stat-transactions">
+                <div class="stat-number">₹2.5T+</div>
+                <div class="stat-label">Transactions</div>
+            </div>
+            <div class="stat-item" data-testid="stat-merchants">
+                <div class="stat-number">10M+</div>
+                <div class="stat-label">Merchants</div>
+            </div>
+            <div class="stat-item" data-testid="stat-rating">
+                <div class="stat-number">4.8★</div>
+                <div class="stat-label">User Rating</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits" data-testid="benefits-section">
+        <div class="benefits-content">
+            <div class="benefits-image">
+                <div style="width: 100%; height: 500px; background: var(--gradient); border-radius: 30px; display: flex; align-items: center; justify-content: center; color: white; font-size: 48px;">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+            </div>
+            <div class="benefits-list">
+                <div class="section-header" style="text-align: left; margin-bottom: 40px;">
+                    <div class="section-subtitle" data-testid="benefits-subtitle">WHY StacklyPay</div>
+                    <h2 class="section-title" data-testid="benefits-title">Benefits You'll Love</h2>
+                </div>
+                <div class="benefit-item" data-testid="benefit-1">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">Zero Transaction Fees</h3>
+                        <p class="benefit-desc">Send money to anyone without any charges. Keep more of your hard-earned money.</p>
+                    </div>
+                </div>
+                <div class="benefit-item" data-testid="benefit-2">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">24/7 Availability</h3>
+                        <p class="benefit-desc">Make payments anytime, anywhere. No banking hours, no holidays, no restrictions.</p>
+                    </div>
+                </div>
+                <div class="benefit-item" data-testid="benefit-3">
+                    <div class="benefit-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">Secure Transactions</h3>
+                        <p class="benefit-desc">Your money is protected with industry-leading security measures and encryption.</p>
+                    </div>
+                </div>
+                <div class="benefit-item" data-testid="benefit-4">
+                    <div class="benefit-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">Exclusive Offers</h3>
+                        <p class="benefit-desc">Get access to amazing deals, discounts, and cashback offers from top brands.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- CTA Section -->
+    <section class="cta" data-testid="cta-section">
+        <div class="cta-content">
+            <h2 data-testid="cta-title">Ready to Experience the Future of Payments?</h2>
+            <p data-testid="cta-description">Join 50 million+ users who trust StacklyPay for their daily transactions. Download now and get ₹100 welcome bonus!</p>
+            <div class="cta-buttons">
+                <button class="btn-white" data-testid="cta-download-ios" onclick="window.location.href='404.html'">
+                    <i class="fab fa-apple"></i> Download for iOS
+                </button>
+                <button class="btn-white" data-testid="cta-download-android" onclick="window.location.href='404.html'">
+                    <i class="fab fa-google-play"></i> Download for Android
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" data-testid="footer">
+        <div class="footer-content">
+            <div class="footer-section" data-testid="footer-about">
+                <h3>About StacklyPay</h3>
+                <p style="color: rgba(255,255,255,0.7); line-height: 1.8;">StacklyPay is India's leading digital payment platform, making online transactions fast, secure, and simple for everyone.</p>
+                <div class="social-icons">
+                    <div class="social-icon" data-testid="social-facebook" onclick="window.location.href='404.html'" style="cursor: pointer;"><i class="fab fa-facebook-f"></i></div>
+                    <div class="social-icon" data-testid="social-twitter" onclick="window.location.href='404.html'" style="cursor: pointer;"><i class="fab fa-twitter"></i></div>
+                    <div class="social-icon" data-testid="social-instagram" onclick="window.location.href='404.html'" style="cursor: pointer;"><i class="fab fa-instagram"></i></div>
+                    <div class="social-icon" data-testid="social-linkedin" onclick="window.location.href='404.html'" style="cursor: pointer;"><i class="fab fa-linkedin-in"></i></div>
+                </div>
+            </div>
+            <div class="footer-section" data-testid="footer-company">
+                <h3>Company</h3>
+                <ul class="footer-links">
+                    <li><a href="404.html" data-testid="footer-about-link">About Us</a></li>
+                    <li><a href="404.html" data-testid="footer-careers-link">Careers</a></li>
+                    <li><a href="404.html" data-testid="footer-press-link">Press</a></li>
+                    <li><a href="404.html" data-testid="footer-blog-link">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" data-testid="footer-support">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="404.html" data-testid="footer-help-link">Help Center</a></li>
+                    <li><a href="404.html" data-testid="footer-contact-link">Contact Us</a></li>
+                    <li><a href="404.html" data-testid="footer-faq-link">FAQs</a></li>
+                    <li><a href="404.html" data-testid="footer-security-link">Security</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" data-testid="footer-legal">
+                <h3>Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="404.html" data-testid="footer-privacy-link">Privacy Policy</a></li>
+                    <li><a href="404.html" data-testid="footer-terms-link">Terms of Service</a></li>
+                    <li><a href="404.html" data-testid="footer-refund-link">Refund Policy</a></li>
+                    <li><a href="404.html" data-testid="footer-grievance-link">Grievances</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom" data-testid="footer-bottom">
+            <p>&copy; 2025 StacklyPay. All rights reserved. Made with in India</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop" data-testid="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
