@@ -114,7 +114,7 @@
             background-clip: text;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 3px;
             animation: logoFloat 3s ease-in-out infinite;
         }
 
