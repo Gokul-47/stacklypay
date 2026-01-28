@@ -181,6 +181,7 @@
             box-shadow: 0 4px 15px rgba(95, 37, 159, 0.3);
             position: relative;
             overflow: hidden;
+            margin-right: 10px;
         }
 
         .header-btn::before {
@@ -1347,6 +1348,11 @@
         @media (min-width: 320px) and (max-width: 340px) {
             .logo {
                 font-size: 20px;
+            }
+
+            .header-btn {
+                padding: 8px 16px;
+                font-size: 12px;
             }
 
             .hero-text h1 {
