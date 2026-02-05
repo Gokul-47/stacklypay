@@ -105,10 +105,12 @@
         `;
         document.head.appendChild(style);
 
-        // Duplicate testimonials for infinite scroll
+        // Duplicate testimonials for infinite scroll (guarded in case slider is not present)
         const slider = document.querySelector('.testimonials-slider');
-        const cards = slider.innerHTML;
-        slider.innerHTML += cards;
+        if (slider) {
+            const cards = slider.innerHTML;
+            slider.innerHTML += cards;
+        }
 
         // Counter animation for stats
         const animateCounter = (element, target) => {
@@ -144,5 +146,44 @@
         document.querySelectorAll('.stats').forEach(stat => {
             statsObserver.observe(stat);
         });
+
+        // Mobile menu (hamburger) toggle for small screens
+        (function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navMenu = document.querySelector('.nav-menu');
+            const header = document.querySelector('.header');
+
+            if (mobileMenuBtn && navMenu) {
+                mobileMenuBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    navMenu.classList.toggle('open');
+                    mobileMenuBtn.classList.toggle('open');
+                });
+
+                // Close menu when clicking a nav link (mobile)
+                navMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navMenu.classList.remove('open');
+                        mobileMenuBtn.classList.remove('open');
+                    });
+                });
+
+                // Close when clicking outside header/menu
+                document.addEventListener('click', (e) => {
+                    if (!header.contains(e.target) && navMenu.classList.contains('open')) {
+                        navMenu.classList.remove('open');
+                        mobileMenuBtn.classList.remove('open');
+                    }
+                });
+
+                // Optional: close on ESC
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+                        navMenu.classList.remove('open');
+                        mobileMenuBtn.classList.remove('open');
+                    }
+                });
+            }
+        })();
 
         console.log('PayNow - Advanced Payment Platform Loaded Successfully! 🚀');

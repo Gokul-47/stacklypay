@@ -1149,6 +1149,7 @@
             font-size: 24px;
             color: var(--primary);
             cursor: pointer;
+            z-index: 1002;
         }
 
         /* Scroll to Top Button */
@@ -1191,6 +1192,41 @@
 
             .mobile-menu-btn {
                 display: block;
+            }
+
+            /* When menu is open on mobile, show it as a vertical popover */
+            .nav-menu.open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                right: 20px;
+                background: rgba(255, 255, 255, 0.98);
+                padding: 18px;
+                border-radius: 12px;
+                gap: 12px;
+                width: calc(100% - 40px);
+                max-width: 320px;
+                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+                z-index: 1001;
+                animation: fadeInDown 0.18s ease-out;
+            }
+
+            .nav-menu.open a {
+                display: block;
+                padding: 12px 8px;
+                border-radius: 8px;
+            }
+
+            .nav-menu.open a:hover {
+                background: rgba(95, 37, 159, 0.05);
+                color: var(--primary);
+                transform: none;
+            }
+
+            @keyframes fadeInDown {
+                from { opacity: 0; transform: translateY(-8px); }
+                to { opacity: 1; transform: translateY(0); }
             }
 
             .hero-content {
